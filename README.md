@@ -1,5 +1,5 @@
 # Diabetes-Database-Model
-This project displays a database built for diabetes dataset from its logical model to it's visualization and will also include SQL queries used for data exploration. 
+This project displays a database built from its logical model to it's visualization and will also include SQL queries used for data exploration. 
 
 
 
@@ -21,3 +21,12 @@ at least 21 years old of Pima Indian heritage. Secondly, From the data set in th
 
 - <b>macOS Monterey Version 12.5.1</b>
 
+<p align="center">
+Logical Database Model: <br/>
+<img src="https://i.imgur.com/H1zW96Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Physical Database Model:  <br/>
+<img src="UPDATE IMAGE HERE" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
