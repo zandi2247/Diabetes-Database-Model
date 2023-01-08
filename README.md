@@ -22,7 +22,18 @@ at least 21 years old of Pima Indian heritage. Secondly, From the data set in th
 - <b>macOS Monterey Version 12.5.1</b>
 
 <p align="center">
-Logical Database Model: <br/>
+  <b>Logical Database Model:</b> <br/>
+  <b>Details</b> <br/>
+  <b>PatientId:</b> To identify each unique patient <br/>
+<b>Pregnancies:</b> To express the Number of pregnancies <br/>
+<b>Glucose:</b>To express the Glucose level in blood <br/>
+  <b>BloodPressure:</b> To express the Blood pressure measurement <br/>
+  <b>SkinThickness:</b> To express the thickness of the skin <br/>
+  <b>Insulin:</b> To express the Insulin level in blood <br/>
+  <b>BMI:</b> To express the Body mass index <br/>
+  <b>DiabetesPedigreeFunction:</b> To express the Diabetes percentage<br/>
+  <b>Age:</b> To express the age <br/>
+  <b>Outcome:</b> To express the final result 1 is Yes and 0 is <br/>
 <img src="https://i.imgur.com/H1zW96Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
