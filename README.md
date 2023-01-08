@@ -21,16 +21,3 @@ at least 21 years old of Pima Indian heritage. Secondly, From the data set in th
 
 - <b>macOS Monterey Version 12.5.1</b>
 
-<h2> Logical Model </h2>
-
-<p align="center">
-<br/>
-(insert here)<br />
-<br />
-Final Report:  <br/>
-(insert here)
-<br />
-<br />
-
-
-<!--
