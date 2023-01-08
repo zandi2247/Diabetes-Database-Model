@@ -34,10 +34,3 @@ at least 21 years old of Pima Indian heritage. Secondly, From the data set in th
   <b>DiabetesPedigreeFunction:</b> To express the Diabetes percentage<br/>
   <b>Age:</b> To express the age <br/>
   <b>Outcome:</b> To express the final result 1 is Yes and 0 is <br/>
-<img src="https://i.imgur.com/H1zW96Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Physical Database Model:  <br/>
-<img src="UPDATE IMAGE HERE" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
