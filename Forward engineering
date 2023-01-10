@@ -1,0 +1,70 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema diabetes
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema diabetes
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `diabetes` DEFAULT CHARACTER SET utf8 ;
+USE `diabetes` ;
+
+-- -----------------------------------------------------
+-- Table `diabetes`.`Patients`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `diabetes`.`Patients` (
+  `patient_id` INT NOT NULL AUTO_INCREMENT,
+  `age` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`patient_id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `diabetes`.`diagnostic_measure`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `diabetes`.`diagnostic_measure` (
+  `diagnostic_measure_id` INT NOT NULL AUTO_INCREMENT,
+  `age` INT NOT NULL,
+  `BMI` DECIMAL(3,1) NOT NULL,
+  `DPF` VARCHAR(45) NOT NULL,
+  `glucose` VARCHAR(45) NOT NULL,
+  `insulin` VARCHAR(45) NOT NULL,
+  `blood_pressure` VARCHAR(45) NOT NULL,
+  `skin_thickness` VARCHAR(45) NOT NULL,
+  `diabetes_pedigree_function` DECIMAL(4,3) NOT NULL,
+  PRIMARY KEY (`diagnostic_measure_id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `diabetes`.`outcomes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `diabetes`.`outcomes` (
+  `p_outcome_id` INT NOT NULL,
+  `d_measure_outcome_id` INT NOT NULL,
+  `1` INT NOT NULL,
+  `0` INT NOT NULL,
+  INDEX `fk_outcomes_Patients_idx` (`p_outcome_id` ASC) VISIBLE,
+  INDEX `fk_outcomes_diagnostic_measure1_idx` (`d_measure_outcome_id` ASC) VISIBLE,
+  PRIMARY KEY (`p_outcome_id`, `d_measure_outcome_id`),
+  CONSTRAINT `fk_outcomes_Patients`
+    FOREIGN KEY (`p_outcome_id`)
+    REFERENCES `diabetes`.`Patients` (`patient_id`)
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_outcomes_diagnostic_measure`
+    FOREIGN KEY (`d_measure_outcome_id`)
+    REFERENCES `diabetes`.`diagnostic_measure` (`diagnostic_measure_id`)
+    ON DELETE NO ACTION
+    ON UPDATE CASCADE)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
