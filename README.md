@@ -41,3 +41,8 @@ at least 21 years old of Pima Indian heritage. Secondly, From the dataset in the
 <img src="https://i.imgur.com/Mm2SkZA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+<b>Physical Database</b> This Screenshot displays the result of the physical model after forward engineering and importing the dataset into the database.Please feel free to see the README file under "forward engineering" to view the details of the script. <br/>
+<img src="https://i.imgur.com/GRyFLnq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+
