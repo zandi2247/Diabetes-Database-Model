@@ -37,11 +37,11 @@ at least 21 years old of Pima Indian heritage. Secondly, From the dataset in the
 <img src="https://i.imgur.com/JfXs70K.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-  <b>Physical Model Database Model</b> This Screenshot displays all three tables, their columns, datatypes, and relationship to one another.The patient table is the "parent" table. The "outcomes" table is the child and it has a composite key to reflect its relationship between both the "diagnostic_measure" and "patient" tables. At the bottom of this screenshot you can see that there have been constraints listed to make sure that as the "patient" table is updated the "outcomes" table updates as well."No action" was chosen as the default constraint to prevent the data from being deleted. <br/>
+  <b>Physical Model Database Model</b> This Screenshot displays all three tables, their columns, datatypes, and relationship to one another. The patient table is the "parent" table. The "outcomes" table is the child and it has a composite key to reflect its relationship between both the "diagnostic_measure" and "patient" tables. At the bottom of this screenshot you can see that there have been constraints listed to make sure that as the "patient" table is updated the "outcomes" table updates as well. "No action" was chosen as the default constraint to prevent the data from being deleted. <br/>
 <img src="https://i.imgur.com/Mm2SkZA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<b>Physical Database</b> This Screenshot displays the result of the physical model after forward engineering and importing the dataset into the database.Please feel free to see the README file under "forward engineering" to view the details of the script. <br/>
+<b>Physical Database</b> This Screenshot displays the result of the physical model after forward engineering and importing the dataset into the database. Please feel free to see the README file under "forward engineering" to view the details of the script. <br/>
 <img src="https://i.imgur.com/GRyFLnq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
